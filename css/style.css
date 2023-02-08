@@ -38,6 +38,10 @@ html{
     color: white;
 }
 
+.gray{
+    color: gray;
+}
+
 .logo img{
     width: 100%;
 }
@@ -139,6 +143,10 @@ html{
     padding: 20px;
     color: white;
     gap: 40px;
+}
+
+.recently-played h2{
+    padding-bottom: 15px;
 }
 
 .cards-container{
