@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .page-container{
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +97,76 @@
     background-color: #141922;
     height: 100vh;
     width: calc(100vw - 200px);
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.upgrade{
+    position: relative;
+    width: 100%;
+    background-color: #080b12;
+    height: 120px;
+}
+
+.upgrade-button{
+    position: absolute;
+    right: 0;
+
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 20px;
+
+    margin-top: 30px;
+
+    color: white;
+    font-weight: bold;
+}
+
+.find-out{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: gray;
+    
+    padding: 20px;
+    font-weight: bold;
+}
+
+.recently-played{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    gap: 40px;
+}
+
+.cards-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.song-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: calc(100% / 6);
+    text-align: center;
+}
+
+.song-card img{
+    width: 100%;
+}
+
+
+.Created-for{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    gap: 40px;
 }
 
 .footer-container{
@@ -200,7 +274,7 @@
 }
 
 .music-total2{
-    width: 100px;
+    width: 105px;
     background-color: rgb(73, 71, 71);
     height: 5px;
     border-radius: 2px;
