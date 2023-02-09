@@ -6,13 +6,11 @@
 }
 
 html{
+    display: block;
     overflow-x: hidden;
 }
 
 .page-container{
-    display: flex;
-    flex-wrap: wrap;
-    
     height: 100vh;
     width: 100vw;
 }
@@ -26,7 +24,7 @@ html{
     padding: 20px;
 
     background-color:black;
-    height: 100vh;
+    height: 100%;
     width: 200px;
 
     color: gray;
@@ -97,31 +95,38 @@ html{
     display: inline-block;
 }
 
+.main-row{
+    display: flex;
+    flex-direction: row;
+    height: calc(100%-100px);
+}
+
 .main-container{
     background-color: #141922;
-    height: 100vh;
+    height: 100%;
     width: calc(100vw - 200px);
 
     overflow: scroll;
     overflow-x: hidden;
 }
 
+
 .upgrade{
-    position: relative;
-    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: calc(100% - 200px);
     background-color: #080b12;
     height: 120px;
 }
 
 .upgrade-button{
-    position: absolute;
-    right: 0;
 
     border: 1px solid white;
     border-radius: 30px;
     padding: 20px;
-
-    margin-top: 30px;
 
     color: white;
     font-weight: bold;
@@ -183,7 +188,7 @@ html{
 
     background-color: #282828;
     height: 120px;
-    width: 100vw;
+    width: 100%;
 }
 
 .footer-left{
