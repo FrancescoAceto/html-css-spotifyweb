@@ -304,7 +304,7 @@ html{
     gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
     .page-container{
         width: 768px;
     }
@@ -322,13 +322,67 @@ html{
     }
 }
 
-@media screen and (max-width: 576px) {
+ @media screen and (max-width: 576px) {
     .page-container{
         width: 576px;
     }
 
     .find-out{
         flex-wrap: wrap;
+    }
+
+    .cards-container{
+        flex-wrap: wrap;
+    }
+
+    .song-card{
+        width: calc(100% / 2 - 20px / 4 * 3);
+    }
+}
+
+ @media screen and (max-width: 575px) {
+    .page-container{
+        width: 575px;
+    }
+
+    .main-container{
+        width: calc(100% - 25px);
+    }
+
+    .find-out{
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    .nav-options span{
+        display: none;
+    }
+
+    .nav-options{
+        flex-grow: 1;
+    }
+
+    .nav-playlist{
+        display: none;
+    }
+
+    .bottom-nav-flex span,strong,hr{
+        display: none;
+    }
+
+    .bottom-nav-flex{
+
+    }
+
+    .footer-left{
+        width: 200px;
+    }
+
+    .nav-container{
+        width: 55px;
     }
 
     .cards-container{
