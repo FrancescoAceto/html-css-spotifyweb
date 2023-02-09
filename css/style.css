@@ -112,12 +112,12 @@ html{
 
 
 .upgrade{
-    position: fixed;
+    
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
-    width: calc(100% - 200px);
+    width:100%;
     background-color: #080b12;
     height: 120px;
 }
@@ -133,6 +133,7 @@ html{
 }
 
 .find-out{
+    padding-top: 500px;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -303,6 +304,23 @@ html{
     gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .page-container{
+        width: 768px;
+    }
+
+    .find-out{
+        flex-wrap: wrap;
+    }
+
+    .cards-container{
+        flex-wrap: wrap;
+    }
+
+    .song-card{
+        width: calc(100% / 4 - 20px / 4 * 3);
+    }
+}
 
 
 
