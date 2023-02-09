@@ -322,5 +322,22 @@ html{
     }
 }
 
+@media screen and (max-width: 576px) {
+    .page-container{
+        width: 576px;
+    }
+
+    .find-out{
+        flex-wrap: wrap;
+    }
+
+    .cards-container{
+        flex-wrap: wrap;
+    }
+
+    .song-card{
+        width: calc(100% / 2 - 20px / 4 * 3);
+    }
+}
 
 
